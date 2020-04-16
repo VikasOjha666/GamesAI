@@ -8,7 +8,7 @@ env=make_env('PongNoFrameskip-v4')
 epsilon=0.02
 action_space=[i for i in range(6)]
 
-model=load_model('q_val.h5')
+model=load_model('model.h5')
 def choose_action(observation):
     if np.random.random()<epsilon:
         action=np.random.choice(action_space)
